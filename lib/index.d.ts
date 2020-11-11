@@ -1,34 +1,34 @@
 import React, { Component } from 'react'
 
 interface IProps{
-  dataSource: any[];
-  parentWidth: number;
-  childrenHeight: number;
-  childrenWidth: number;
+  dataSource: any[],
+  parentWidth: number,
+  childrenHeight: number,
+  childrenWidth: number,
 
-  marginChildrenTop?: number;
-  marginChildrenBottom?: number;
-  marginChildrenLeft?: number;
-  marginChildrenRight?: number;
+  marginChildrenTop?: number,
+  marginChildrenBottom?: number,
+  marginChildrenLeft?: number,
+  marginChildrenRight?: number,
 
-  sortable?: boolean;
+  sortable?: boolean,
 
-  onClickItem?: (data: any[],item: any,index: number) => void;
-  onDragStart?: (fromIndex: number) => void;
-  onDragEnd?: (fromIndex: number,toIndex: number) => void;
-  onDataChange?: (data: any[]) => void;
-  renderItem: (item: any,index: number) => React.ReactElement<any>;
-  scaleStatus?: 'scale' | 'scaleX' |'scaleY';
-  fixedItems?: number[];
-  keyExtractor?: (item: any,index: number) => any;
-  delayLongPress?: number;
-  isDragFreely?: boolean;
-  onDragging?: (gestureState: any, left: number, top: number, moveToIndex: number) => void;
+  onClickItem?: (data: any[],item: any,index: number) => void,
+  onDragStart?: (fromIndex: number) => void,
+  onDragEnd?: (fromIndex: number,toIndex: number) => void,
+  onDataChange?: (data: any[]) => void,
+  renderItem: (item: any,index: number) => React.ReactElement<any>,
+  scaleStatus?: 'scale' | 'scaleX' |'scaleY',
+  fixedItems?: number[],
+  keyExtractor?: (item: any,index: number) => any,
+  delayLongPress?: number,
+  isDragFreely?: boolean,
+  onDragging?: (gestureState: any, left: number, top: number, moveToIndex: number) => void,
 
-  maxScale?: number;
-  minOpacity?: number;
-  scaleDuration?: number;
-  slideDuration?: number;
+  maxScale?: number,
+  minOpacity?: number,
+  scaleDuration?: number,
+  slideDuration?: number,
 }
 
 interface AutoIProps extends IProps {
@@ -38,6 +38,8 @@ interface AutoIProps extends IProps {
   headerViewHeight?: number,
   renderBottomView?: any,
   bottomViewHeight?: number,
+  bounces?: boolean,
+  scrollIndicatorInsets?: {top: number, left: number, bottom: number, right: number},
 }
  
 declare class DragSortableView extends Component<IProps>{}
