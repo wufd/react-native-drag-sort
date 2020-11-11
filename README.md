@@ -73,13 +73,6 @@ export { DragSortableView, AutoDragSortableView }
 - **headerViewHeight**: PropTypes.number,
 - **renderBottomView**: PropTypes.element,
 - **bottomViewHeight**: PropTypes.number,
-- **bounces**: PropTypes.bool,
-- **scrollIndicatorInsets**: PropTypes.shape({
-        top: PropTypes.number,
-        left: PropTypes.number,
-        bottom: PropTypes.number,
-        right: PropTypes.number,
-    }),
 
 ### Example
 
